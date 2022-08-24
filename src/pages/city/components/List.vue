@@ -61,7 +61,7 @@ import Bscroll from 'better-scroll'
 			}
 		},
 		mounted(){
-			this.scroll=new Bscroll(this.$refs.wrapper)
+			this.scroll=new Bscroll(this.$refs.wrapper,{ mouseWheel: true, click: true, tap: true })
 		}
 	}
 </script>
