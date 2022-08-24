@@ -29,16 +29,16 @@ export default {
 	}
   },
   computed:{
-    ...mapState(['city'])
-// 	city: {
-//      get() {
-//        return this.$store.state.city;
-//      },
+    // ...mapState(['city'])
+	city: {
+     get() {
+       return this.$store.state.city;
+     },
 
-//      set(val) {
-//        // this.$store.state.city = val;
-//      }
-//    }
+     set(val) {
+       // this.$store.state.city = val;
+     }
+   }
   },
   methods:{
 	getHomeInfo(){
