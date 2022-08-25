@@ -8,8 +8,8 @@ import store from './store/index'
 import './assets/styles/reset.css'
 import './assets/styles/border.css'
 import './assets/styles/iconfont.css'
-import 'swiper/dist/css/swiper.css'
-
+import 'swiper/css/swiper.css'
+// import 'default-passive-events'
 Vue.config.productionTip = false
 Vue.use(VueAwesomeSwiper);
 /* eslint-disable no-new */

@@ -2,14 +2,24 @@
 	<div>
         <div class="title">热销推荐</div>
         <ul>
+<<<<<<< HEAD
             <router-link class="item border-bottom" v-for="item of list" :key="item.id" :to="'/detail/'+item.id">
+=======
+             <li class="item border-bottom" v-for="item of list" :key="item.id">
+				<router-link :to="'/detail/'+item.id"  >
+>>>>>>> detail-banner
                 <img class="item-img" :src="item.imgUrl" alt="">
                 <div class="item-info">
                     <p class="item-title">{{item.title}}</p>
                     <p class="desc">{{item.desc}}</p>
                     <button class="item-button">查看详情</button>
+<<<<<<< HEAD
                 </div>
             </router-link>
+=======
+                </div></router-link>
+	        </li>
+>>>>>>> detail-banner
         </ul>
 	</div>
 </template>
@@ -31,17 +41,22 @@
   background: #eee
   text-indent: .2rem
 .item
+  position: relative
   overflow: hidden
   display: flex
   height: 1.9rem
   .item-img
+    position: absolute
     width: 1.7rem
     height: 1.7rem
     padding:.1rem
   .item-info
+    position: absolute
     flex: 1
     padding:.1rem
+    margin-left: 1.8rem
     min-width: 0
+    color: #333
     .item-title
       line-height: .54rem
       font-size: .32rem
