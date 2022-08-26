@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import VueAwesomeSwiper from 'vue-awesome-swiper/dist/vue-awesome-swiper.js'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
 import store from './store/index'
 import './assets/styles/reset.css'
 import './assets/styles/border.css'

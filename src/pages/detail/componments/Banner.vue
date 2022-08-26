@@ -60,7 +60,7 @@
             bottom 0
             line-height .6rem
             color #fff
-            background-image linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8))
+            background-img linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8))
             .banner-title
                 flex 1
                 font-size .32rem
@@ -70,8 +70,9 @@
                 height .4rem
                 line-height .4rem  
                 border-radius .2rem
-                font-size .3rem
+                font-size .24rem
                 background rgba(0,0,0,.8)
                 .banner-icon
-                    font-size .3rem
+                    font-size .24rem
+                    color: #fff
 </style>
