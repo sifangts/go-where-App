@@ -18,7 +18,7 @@
 		data(){
            return{
 			showGallary:false,
-imgs:["http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_600x330_bf9c4904.jpg","http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_600x330_bf9c4904.jpg"]
+imgs:["http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_600x330_bf9c4904.jpg","http://img1.qunarzz.com/sight/p0/2204/46/46de34606a90da59a3.water.jpg_r_800x800_5611e300.jpg"]
 		   } 
 		},
 		methods:{
@@ -28,10 +28,6 @@ imgs:["http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad
 			handleGallaryClose(){
 				console.log('触发了改变')
 				this.showGallary=false
-			// 	let timer = setTimeout(() => {
-            //     this.showGallary = false
-            //     clearTimeout(timer)
-            // }, 10);
 			}
 		},
 		components:{
