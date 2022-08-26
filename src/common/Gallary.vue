@@ -16,7 +16,7 @@
 		name:'CommonGallary',
 		props:{
             imgs:{
-				type:Array,
+				type:[Array,String],
 				default(){
 					return []
 				}
@@ -25,16 +25,21 @@
 		data(){
 			return{
 				swiperOptions:{
+					autoplay:{
+						delay:3000,
+						disableOnInteraction:false
+					},
                     pagination: {
                         el: '.swiper-pagination',
                         type:'fraction'
 					},
 					observerParents:true,
                     observer:true,
-					loop:true
+					loop:true,  
 				}
 			}
 		},
+		
 		methods:{
 			handleGallaryClick(){
 				console.log('触发了Banner')
@@ -59,7 +64,6 @@
         bottom 0
         background #000
         .wrapper 
-            // overflow hidden
             height 0
             width 100%
             padding-bottom 100%  

@@ -27,35 +27,38 @@ computed:{
 }
 </script>
 
-<style lang='stylus' scoped>
+<style lang="stylus" scoped>
   @import '~@/assets/styles/varibles.styl'
-  .header
-    display: flex
-    line-height: $headerHeight
-    background: $bgColor
-    color: #fff
-    .header-left
-      width .64rem
-      float: left
-      .back-icon
-        text-align: center
-        font-size:.4rem
-    .header-input
-      flex:1
-      height: .64rem
-      line-height: .64rem
-      margin-top: .12rem
-      margin-left: .2rem
-      padding-left:.2rem
-      background: #fff
-      border-radius:5px
-      color: #ccc
-    .header-right
-      min-width: 1.04rem
-	  padding:0 .15rem
-      float: right
-      text-align: center
-      .arrow-icon
-        margin-left: -.0.4rem
-        fon-size: .24rem
+    .header
+        display:flex
+        height:.86rem
+        line-height .86rem
+        background:$bgColor
+        color:#fff
+        .header-left
+            width:.64rem
+            float:left
+            .back-icon
+               text-align:center
+               font-size:.4rem
+        .header-input
+            flex:1
+            height:.64rem
+            line-height .64rem  
+            margin-top:.12rem
+            margin-left:.2rem
+            padding-left:.2rem
+            background:#fff
+            border-radius:.1rem
+            color:#999
+        .header-right
+            min-width:1.04rem
+            padding 0 .1em
+            float:right
+            text-align:center
+            color:#fff
+            .arrow-icon
+                font-size:.24rem
+                margin-left:-.04rem
+                color:#fff
 </style>

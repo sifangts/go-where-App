@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<router-link to="/" class="header-abs" v-show="showAbs">
-			<span class="iconfont header-abs-back">&#xe685;</span>
+			<div class="iconfont header-abs-back">&#xe685;</div>
 		</router-link>
 		<div class="header-fixed" v-show="!showAbs" :style="opacityStyle">
 			<router-link to="/" class="header-left">
@@ -19,27 +19,27 @@
 			return{
 				showAbs:true,
 				opacityStyle:{
-					opacity:0
+					opacity:1
 				}
 			}
 		},
 		methods:{
             handleScroll(){
-				const top=document.documentElement.scrollTop || document.body.scrollTop || window.pageYOffset;
-				if(top>60){
+				const top=document.documentElement.scrollTop
+				if(top>100){
 					let opacity=top/140
 					opacity=opacity>1?1:opacity
 					this.opacityStyle={opacity}
 					this.showAbs=false
 				}else{
-					this.scrollTop=true
+					this.showAbs=true
 				}
 			}
 		},
-		activated(){
+		mounted(){
 			window.addEventListener('scroll',this.handleScroll)
 		},
-		deactivated(){
+		unmounted(){
 			window.removeEventListener('scroll',this.handleScroll)
 		}
 	}
