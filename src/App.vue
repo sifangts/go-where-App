@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-	<keep-alive>
+	<keep-alive exclude="Detail"><!-- 使用exclude内容不再被缓存 -->
         <router-view/>
 	</keep-alive>
   </div>
